@@ -23,7 +23,7 @@
 #include "main.h"
 #include "gauge.h"
 
-
+#include "rtc_wake_stub_bath.h"
 
 esp_mqtt_client_handle_t mqtt_client = NULL;
 EventGroupHandle_t mqtt_event_group;
@@ -130,3 +130,72 @@ void sendBatteryStatusToMQTT(void) {
     return ESP_FAIL;
   }
 }
+
+
+void sendDoorEventToMQTT(void) {   // my cde 
+  time_t now = 0;
+
+  char msg[150];
+  time(&now);
+
+  int size = snprintf(msg, sizeof(msg), "{\"sensors\":[{\"name\":\"door\",\"values\":[{\"timestamp\":%llu, \"roomID2\":\"entrance\"}]}]}", now * 1000);
+  // ESP_LOGI("Door Pin", "Final DOOR_PIN value before sleep: %d", gpio_get_level(DOOR_PIN));
+  // esp_log_level_set("Door Pin", ESP_LOG_INFO);
+
+  // Log and send the message
+  ESP_LOGI("mqtt", "Sent <%s> to topic %s", msg, DEVICE_TOPIC);
+  auto err = esp_mqtt_client_publish(mqtt_client, DEVICE_TOPIC, msg, size, 1, 0);
+  
+  // Check for errors in publishing
+  if (err == -1) {
+    printf("Error while publishing to MQTT\n");
+    ESP_LOGI("functions", "SendToMqttFunction terminated");
+    return ESP_FAIL;
+  }
+
+  // Clear the event buffer after sending
+  s_count = 0;
+}
+
+void sendStoredEventsToMQTT(void) {
+    if (s_count == 0) {
+        ESP_LOGI("mqtt", "No events to send.");
+        return;
+    }
+
+    char msg[1024] = "{\"sensors\":[{\"name\":\"PIR\",\"values\":["; // JSON message prefix
+    int msg_len = strlen(msg); // Track current length of JSON message
+
+    // Iterate through stored events in the buffer
+    for (int i = 0; i < s_count; i++) {
+        char event[128];
+        snprintf(event, sizeof(event),
+                 "{\"timestamp\":%llu}", 
+                 event_buffer[i].timestamp * 1000); // Convert timestamp to milliseconds
+
+        // Add a comma if it's not the first event
+        if (i > 0) {
+            strncat(msg, ",", sizeof(msg) - msg_len - 1);
+            msg_len++;
+        }
+
+        // Append the event JSON to the message
+        strncat(msg, event, sizeof(msg) - msg_len - 1);
+        msg_len += strlen(event);
+    }
+
+    // Complete the JSON structure
+    strncat(msg, "]}]}", sizeof(msg) - msg_len - 1);
+
+    // Publish the JSON message to MQTT
+    int err = esp_mqtt_client_publish(mqtt_client, DEVICE_TOPIC, msg, 0, 1, 0);
+    if (err < 0) {
+        ESP_LOGE("mqtt", "Error while publishing events to MQTT.");
+    } else {
+        ESP_LOGI("mqtt", "Sent events: %s", msg);
+    }
+
+    // Clear the event buffer after sending
+    s_count = 0;
+}
+

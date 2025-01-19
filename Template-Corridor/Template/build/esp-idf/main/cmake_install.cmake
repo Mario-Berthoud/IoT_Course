@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mario/Desktop/Template-Bath/Template/main
+# Install script for directory: C:/Users/mario/Desktop/IoT/Template-Corridor/Template/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

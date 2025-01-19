@@ -3433,7 +3433,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wiegand_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\mario\Desktop\Template-Bath\Template -BC:\Users\mario\Desktop\Template-Bath\Template\build
+  command = C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\mario\Desktop\IoT\Template-Bath\Template -BC:\Users\mario\Desktop\IoT\Template-Bath\Template\build
   description = Re-running CMake...
   generator = 1
 

@@ -1,0 +1,3458 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (414) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (450) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) load[0m
+[0;32mI (451) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) load[0m
+[0;32mI (469) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (469) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu start user code[0m
+[0;32mI (490) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (490) app_init: Application information:[0m
+[0;32mI (493) app_init: Project name:     PIR[0m
+[0;32mI (497) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (503) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (509) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (514) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (519) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (524) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (529) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (581) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (594) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (605) main_task: Started on CPU0[0m
+[0;32mI (615) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (615) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (725) gauge: Power Mode: 0x1[0m
+[0;32mI (725) gauge: APA: 0x2A[0m
+[0;32mI (725) gauge: Battery Profile: 0x1[0m
+[0;32mI (725) gauge: Temp Mode: 0x0[0m
+[0;32mI (735) gauge: Voltage: 4.27	RSOC: 100.0%[0m
+[0;32mI (735) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (735) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (765) progress: Starting Wifi[0m
+[0;32mI (1905) progress: Starting Clock[0m
+[0;32mI (5905) progress: The current date/time in Germany is: Thu Jan 16 13:30:32 2025[0m
+[0;32mI (5905) progress: Starting MQTT[0m
+[0;32mI (5905) mqtt: [APP] Free memory: 225168 bytes[0m
+[0;32mI (5915) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5925) mqtt: Note free memory: 213592 bytes[0m
+[0;32mI (5925) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (6225) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (6225) mqtt: Connected to MQTT
+[0m
+[0;32mI (6225) progress: Wake count: 1[0m
+[0;32mI (7225) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 7285874, Last Timestamp: 0[0m
+[0;32mStored event at position 0[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (63) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (63) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (194) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (194) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (205) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (213) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (446) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (482) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (483) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (500) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (500) boot: Disabling RNG early entropy source...[0m
+[0;32mI (513) cpu_start: Multicore app[0m
+[0;32mI (521) cpu_start: Pro cpu start user code[0m
+[0;32mI (521) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (521) app_init: Application information:[0m
+[0;32mI (524) app_init: Project name:     PIR[0m
+[0;32mI (529) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (534) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (540) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (546) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (551) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (555) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (560) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (566) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (573) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (585) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (591) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (605) spi_flash: detected chip: generic[0m
+[0;32mI (608) spi_flash: flash io: dio[0m
+[0;33mW (612) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (626) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (637) main_task: Started on CPU0[0m
+[0;32mI (647) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (647) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (757) gauge: Power Mode: 0x1[0m
+[0;32mI (757) gauge: APA: 0x2A[0m
+[0;32mI (757) gauge: Battery Profile: 0x1[0m
+[0;32mI (757) gauge: Temp Mode: 0x0[0m
+[0;32mI (767) gauge: Voltage: 4.23	RSOC: 100.0%[0m
+[0;32mI (767) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (767) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (797) progress: Starting Wifi[0m
+[0;32mI (1887) progress: Starting Clock[0m
+[0;32mI (5887) progress: The current date/time in Germany is: Thu Jan 16 13:30:40 2025[0m
+[0;32mI (5887) progress: Starting MQTT[0m
+[0;32mI (5887) mqtt: [APP] Free memory: 225180 bytes[0m
+[0;32mI (5897) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5907) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (5907) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5957) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5957) mqtt: Connected to MQTT
+[0m
+[0;32mI (5957) progress: Wake count: 2[0m
+[0;32mI (5957) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 13288525, Last Timestamp: 7285874[0m
+[0;32mStored event at position 1[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (70) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (70) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (71) boot: Multicore bootloader[0m
+[0;32mI (75) boot: chip revision: v3.0[0m
+[0;32mI (79) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (83) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (88) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (93) boot: Enabling RNG early entropy source...[0m
+[0;32mI (98) boot: Partition Table:[0m
+[0;32mI (102) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (109) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (116) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (124) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (132) boot: End of partition table[0m
+[0;32mI (136) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (201) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (202) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (221) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (454) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (490) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (490) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) app_init: Application information:[0m
+[0;32mI (532) app_init: Project name:     PIR[0m
+[0;32mI (536) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (542) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (548) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (554) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (558) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (563) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (568) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;33mW (620) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (633) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (645) main_task: Started on CPU0[0m
+[0;32mI (655) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (655) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (765) gauge: Power Mode: 0x1[0m
+[0;32mI (765) gauge: APA: 0x2A[0m
+[0;32mI (765) gauge: Battery Profile: 0x1[0m
+[0;32mI (765) gauge: Temp Mode: 0x0[0m
+[0;32mI (775) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (775) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (775) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (805) progress: Starting Wifi[0m
+[0;32mI (1885) progress: Starting Clock[0m
+[0;32mI (3885) progress: The current date/time in Germany is: Thu Jan 16 13:30:44 2025[0m
+[0;32mI (3885) progress: Starting MQTT[0m
+[0;32mI (3885) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3895) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3905) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3905) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3925) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3925) mqtt: Connected to MQTT
+[0m
+[0;32mI (3925) progress: Wake count: 3[0m
+[0;32mI (3925) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 17253632, Last Timestamp: 13288525[0m
+[0;32mStored event at position 2[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (77) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (78) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (78) boot: Multicore bootloader[0m
+[0;32mI (82) boot: chip revision: v3.0[0m
+[0;32mI (86) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (91) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (95) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (100) boot: Enabling RNG early entropy source...[0m
+[0;32mI (105) boot: Partition Table:[0m
+[0;32mI (109) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (116) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (124) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (131) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (139) boot: End of partition table[0m
+[0;32mI (143) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (209) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (220) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (228) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (461) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (497) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (498) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (515) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (515) boot: Disabling RNG early entropy source...[0m
+[0;32mI (528) cpu_start: Multicore app[0m
+[0;32mI (536) cpu_start: Pro cpu start user code[0m
+[0;32mI (536) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (536) app_init: Application information:[0m
+[0;32mI (539) app_init: Project name:     PIR[0m
+[0;32mI (544) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (549) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (555) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (561) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (566) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (570) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (575) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (580) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (588) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (620) spi_flash: detected chip: generic[0m
+[0;32mI (623) spi_flash: flash io: dio[0m
+[0;33mW (627) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (641) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (662) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (772) gauge: Power Mode: 0x1[0m
+[0;32mI (772) gauge: APA: 0x2A[0m
+[0;32mI (772) gauge: Battery Profile: 0x1[0m
+[0;32mI (772) gauge: Temp Mode: 0x0[0m
+[0;32mI (772) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (782) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (782) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (812) progress: Starting Wifi[0m
+[0;32mI (1892) progress: Starting Clock[0m
+[0;32mI (7892) progress: The current date/time in Germany is: Thu Jan 16 13:30:52 2025[0m
+[0;32mI (7892) progress: Starting MQTT[0m
+[0;32mI (7892) mqtt: [APP] Free memory: 225188 bytes[0m
+[0;32mI (7902) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7902) mqtt: Note free memory: 213608 bytes[0m
+[0;32mI (7902) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7922) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7922) mqtt: Connected to MQTT
+[0m
+[0;32mI (7922) progress: Wake count: 4[0m
+[0;32mI (7922) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 25200454, Last Timestamp: 17253632[0m
+[0;32mStored event at position 3[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (84) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (85) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (85) boot: Multicore bootloader[0m
+[0;32mI (89) boot: chip revision: v3.0[0m
+[0;32mI (93) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (98) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (102) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (107) boot: Enabling RNG early entropy source...[0m
+[0;32mI (112) boot: Partition Table:[0m
+[0;32mI (116) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (123) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (131) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (138) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (146) boot: End of partition table[0m
+[0;32mI (150) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (216) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (227) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (235) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (468) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (504) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (505) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (522) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (522) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (543) cpu_start: Pro cpu start user code[0m
+[0;32mI (543) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (543) app_init: Application information:[0m
+[0;32mI (546) app_init: Project name:     PIR[0m
+[0;32mI (551) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (556) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (562) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (568) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (573) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (578) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (582) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (648) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (659) main_task: Started on CPU0[0m
+[0;32mI (669) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (669) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (779) gauge: Power Mode: 0x1[0m
+[0;32mI (779) gauge: APA: 0x2A[0m
+[0;32mI (779) gauge: Battery Profile: 0x1[0m
+[0;32mI (779) gauge: Temp Mode: 0x0[0m
+[0;32mI (789) gauge: Voltage: 4.28	RSOC: 100.0%[0m
+[0;32mI (789) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (789) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (819) progress: Starting Wifi[0m
+[0;32mI (1899) progress: Starting Clock[0m
+[0;32mI (3899) progress: The current date/time in Germany is: Thu Jan 16 13:30:56 2025[0m
+[0;32mI (3899) progress: Starting MQTT[0m
+[0;32mI (3899) mqtt: [APP] Free memory: 225168 bytes[0m
+[0;32mI (3909) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3919) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3919) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3929) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3929) mqtt: Connected to MQTT
+[0m
+[0;32mI (3929) progress: Wake count: 5[0m
+[0;32mI (3929) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 29173880, Last Timestamp: 25200454[0m
+[0;32mStored event at position 4[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (91) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (92) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (92) boot: Multicore bootloader[0m
+[0;32mI (96) boot: chip revision: v3.0[0m
+[0;32mI (100) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (105) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (109) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (114) boot: Enabling RNG early entropy source...[0m
+[0;32mI (119) boot: Partition Table:[0m
+[0;32mI (123) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (130) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (138) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (146) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (153) boot: End of partition table[0m
+[0;32mI (157) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (223) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (235) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (242) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (476) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (511) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (512) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (530) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (550) cpu_start: Pro cpu start user code[0m
+[0;32mI (550) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (550) app_init: Application information:[0m
+[0;32mI (553) app_init: Project name:     PIR[0m
+[0;32mI (558) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (563) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (569) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (575) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (580) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (585) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (590) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (635) spi_flash: detected chip: generic[0m
+[0;32mI (638) spi_flash: flash io: dio[0m
+[0;33mW (641) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (655) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (676) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (786) gauge: Power Mode: 0x1[0m
+[0;32mI (786) gauge: APA: 0x2A[0m
+[0;32mI (786) gauge: Battery Profile: 0x1[0m
+[0;32mI (786) gauge: Temp Mode: 0x0[0m
+[0;32mI (796) gauge: Voltage: 4.16	RSOC: 98.0%[0m
+[0;32mI (796) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (796) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (826) progress: Starting Wifi[0m
+[0;32mI (1906) progress: Starting Clock[0m
+[0;32mI (7906) progress: The current date/time in Germany is: Thu Jan 16 13:31:03 2025[0m
+[0;32mI (7906) progress: Starting MQTT[0m
+[0;32mI (7906) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7916) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7926) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (7926) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7946) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7946) mqtt: Connected to MQTT
+[0m
+[0;32mI (7946) progress: Wake count: 6[0m
+[0;32mI (7946) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 37077486, Last Timestamp: 29173880[0m
+[0;32mStored event at position 5[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (98) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (99) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (99) boot: Multicore bootloader[0m
+[0;32mI (103) boot: chip revision: v3.0[0m
+[0;32mI (107) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (112) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (116) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (121) boot: Enabling RNG early entropy source...[0m
+[0;32mI (126) boot: Partition Table:[0m
+[0;32mI (130) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (138) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (145) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (153) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (160) boot: End of partition table[0m
+[0;32mI (164) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (230) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (230) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (242) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (249) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (483) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (518) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (519) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (537) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (537) boot: Disabling RNG early entropy source...[0m
+[0;32mI (549) cpu_start: Multicore app[0m
+[0;32mI (557) cpu_start: Pro cpu start user code[0m
+[0;32mI (557) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (558) app_init: Application information:[0m
+[0;32mI (560) app_init: Project name:     PIR[0m
+[0;32mI (565) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (570) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (576) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (582) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (587) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (592) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (597) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (602) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (609) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (662) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (673) main_task: Started on CPU0[0m
+[0;32mI (683) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (683) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (793) gauge: Power Mode: 0x1[0m
+[0;32mI (793) gauge: APA: 0x2A[0m
+[0;32mI (793) gauge: Battery Profile: 0x1[0m
+[0;32mI (793) gauge: Temp Mode: 0x0[0m
+[0;32mI (803) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (803) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (803) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (833) progress: Starting Wifi[0m
+[0;32mI (1923) progress: Starting Clock[0m
+[0;32mI (5923) progress: The current date/time in Germany is: Thu Jan 16 13:31:09 2025[0m
+[0;32mI (5923) progress: Starting MQTT[0m
+[0;32mI (5923) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (5933) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5943) mqtt: Note free memory: 213608 bytes[0m
+[0;32mI (5943) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5963) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5963) mqtt: Connected to MQTT
+[0m
+[0;32mI (5963) progress: Wake count: 7[0m
+[0;32mI (5963) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 43119422, Last Timestamp: 37077486[0m
+[0;32mStored event at position 6[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 43119422, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (105) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (106) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (106) boot: Multicore bootloader[0m
+[0;32mI (110) boot: chip revision: v3.0[0m
+[0;32mI (114) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (119) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (124) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (128) boot: Enabling RNG early entropy source...[0m
+[0;32mI (134) boot: Partition Table:[0m
+[0;32mI (137) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (145) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (152) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (160) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (167) boot: End of partition table[0m
+[0;32mI (172) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (238) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (249) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (257) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (490) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (526) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (526) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (544) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (544) boot: Disabling RNG early entropy source...[0m
+[0;32mI (556) cpu_start: Multicore app[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (565) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (565) app_init: Application information:[0m
+[0;32mI (568) app_init: Project name:     PIR[0m
+[0;32mI (572) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (578) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (584) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (589) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (594) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (599) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (604) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (609) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (616) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (628) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (641) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (649) spi_flash: detected chip: generic[0m
+[0;32mI (652) spi_flash: flash io: dio[0m
+[0;33mW (656) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (669) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (681) main_task: Started on CPU0[0m
+[0;32mI (691) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (691) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (801) gauge: Power Mode: 0x1[0m
+[0;32mI (801) gauge: APA: 0x2A[0m
+[0;32mI (801) gauge: Battery Profile: 0x1[0m
+[0;32mI (801) gauge: Temp Mode: 0x0[0m
+[0;32mI (801) gauge: Voltage: 3.88	RSOC: 58.0%[0m
+[0;32mI (811) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (811) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (841) progress: Starting Wifi[0m
+[0;32mI (1931) progress: Starting Clock[0m
+[0;32mI (7931) progress: The current date/time in Germany is: Thu Jan 16 13:31:17 2025[0m
+[0;32mI (7931) progress: Starting MQTT[0m
+[0;32mI (7931) mqtt: [APP] Free memory: 225180 bytes[0m
+[0;32mI (7941) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7951) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (7951) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7971) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7971) mqtt: Connected to MQTT
+[0m
+[0;32mI (7971) progress: Wake count: 8[0m
+[0;32mI (7971) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 51119501, Last Timestamp: 43119422[0m
+[0;32mStored event at position 7[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 43119422, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 51119501, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (112) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (113) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (113) boot: Multicore bootloader[0m
+[0;32mI (117) boot: chip revision: v3.0[0m
+[0;32mI (121) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (126) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (131) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (135) boot: Enabling RNG early entropy source...[0m
+[0;32mI (141) boot: Partition Table:[0m
+[0;32mI (144) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (152) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (159) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (167) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (174) boot: End of partition table[0m
+[0;32mI (179) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (244) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (245) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (264) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (497) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (533) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (533) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+[0;32mI (563) cpu_start: Multicore app[0m
+[0;32mI (572) cpu_start: Pro cpu start user code[0m
+[0;32mI (572) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (572) app_init: Application information:[0m
+[0;32mI (575) app_init: Project name:     PIR[0m
+[0;32mI (579) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (585) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (591) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (596) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (601) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (606) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (611) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (616) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (623) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (629) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (635) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (642) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (648) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (656) spi_flash: detected chip: generic[0m
+[0;32mI (659) spi_flash: flash io: dio[0m
+[0;33mW (663) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (676) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (687) main_task: Started on CPU0[0m
+[0;32mI (697) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (697) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (807) gauge: Power Mode: 0x1[0m
+[0;32mI (807) gauge: APA: 0x2A[0m
+[0;32mI (807) gauge: Battery Profile: 0x1[0m
+[0;32mI (807) gauge: Temp Mode: 0x0[0m
+[0;32mI (817) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (817) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (817) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (847) progress: Starting Wifi[0m
+[0;32mI (1937) progress: Starting Clock[0m
+[0;32mI (5937) progress: The current date/time in Germany is: Thu Jan 16 13:31:23 2025[0m
+[0;32mI (5937) progress: Starting MQTT[0m
+[0;32mI (5937) mqtt: [APP] Free memory: 225180 bytes[0m
+[0;32mI (5947) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5957) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (5957) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5977) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5977) mqtt: Connected to MQTT
+[0m
+[0;32mI (5977) progress: Wake count: 9[0m
+[0;32mI (6977) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 3[0m
+[0;32mCurrent Timestamp: 58082232, Last Timestamp: 51119501[0m
+[0;32mWake stub: timer wakeup detected[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 43119422, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 51119501, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (113) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (113) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (113) boot: Multicore bootloader[0m
+[0;32mI (118) boot: chip revision: v3.0[0m
+[0;32mI (122) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (127) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (131) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (136) boot: Enabling RNG early entropy source...[0m
+[0;32mI (141) boot: Partition Table:[0m
+[0;32mI (145) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (152) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (160) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (167) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (175) boot: End of partition table[0m
+[0;32mI (179) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (245) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (264) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (497) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (533) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (534) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+[0;32mI (564) cpu_start: Multicore app[0m
+[0;32mI (572) cpu_start: Pro cpu start user code[0m
+[0;32mI (572) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (572) app_init: Application information:[0m
+[0;32mI (575) app_init: Project name:     PIR[0m
+[0;32mI (580) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (585) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (591) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (597) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (602) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (607) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (611) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (617) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (624) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (630) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (636) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (642) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (656) spi_flash: detected chip: generic[0m
+[0;32mI (659) spi_flash: flash io: dio[0m
+[0;33mW (663) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (677) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (688) main_task: Started on CPU0[0m
+[0;32mI (698) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (698) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (808) gauge: Power Mode: 0x1[0m
+[0;32mI (808) gauge: APA: 0x2A[0m
+[0;32mI (808) gauge: Battery Profile: 0x1[0m
+[0;32mI (808) gauge: Temp Mode: 0x0[0m
+[0;32mI (808) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (818) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (818) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (848) progress: Starting Wifi[0m
+[0;32mI (1928) progress: Starting Clock[0m
+[0;32mI (3928) progress: The current date/time in Germany is: Thu Jan 16 13:31:28 2025[0m
+[0;32mI (3928) progress: Starting MQTT[0m
+[0;32mI (3928) mqtt: [APP] Free memory: 225196 bytes[0m
+[0;32mI (3938) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3948) mqtt: Note free memory: 213624 bytes[0m
+[0;32mI (3948) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (4548) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (4548) mqtt: Connected to MQTT
+[0m
+[0;32mI (4548) progress: Wake count: 10[0m
+[0;32mI (4548) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 62706424, Last Timestamp: 51119501[0m
+[0;32mStored event at position 8[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 43119422, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 51119501, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 62706424, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (119) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (120) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (120) boot: Multicore bootloader[0m
+[0;32mI (124) boot: chip revision: v3.0[0m
+[0;32mI (128) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (133) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (138) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (142) boot: Enabling RNG early entropy source...[0m
+[0;32mI (148) boot: Partition Table:[0m
+[0;32mI (151) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (159) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (166) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (174) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (181) boot: End of partition table[0m
+[0;32mI (186) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (252) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (263) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (271) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (504) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (540) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (540) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (558) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (558) boot: Disabling RNG early entropy source...[0m
+[0;32mI (570) cpu_start: Multicore app[0m
+[0;32mI (579) cpu_start: Pro cpu start user code[0m
+[0;32mI (579) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (579) app_init: Application information:[0m
+[0;32mI (582) app_init: Project name:     PIR[0m
+[0;32mI (586) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (592) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (598) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (603) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (608) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (613) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (618) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (623) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (630) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (636) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (642) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (655) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (663) spi_flash: detected chip: generic[0m
+[0;32mI (666) spi_flash: flash io: dio[0m
+[0;33mW (670) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (683) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (694) main_task: Started on CPU0[0m
+[0;32mI (704) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (704) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (814) gauge: Power Mode: 0x1[0m
+[0;32mI (814) gauge: APA: 0x2A[0m
+[0;32mI (814) gauge: Battery Profile: 0x1[0m
+[0;32mI (814) gauge: Temp Mode: 0x0[0m
+[0;32mI (824) gauge: Voltage: 4.31	RSOC: 100.0%[0m
+[0;32mI (824) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (824) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (854) progress: Starting Wifi[0m
+[0;32mI (1944) progress: Starting Clock[0m
+[0;32mI (5944) progress: The current date/time in Germany is: Thu Jan 16 13:31:35 2025[0m
+[0;32mI (5944) progress: Starting MQTT[0m
+[0;32mI (5944) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (5954) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5964) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (5964) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5984) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5984) mqtt: Connected to MQTT
+[0m
+[0;32mI (5984) progress: Sending battery status to MQTT[0m
+[0;32mI (5984) mqtt: Sent <{"sensors":[{"name":"battery","values":[{"timestamp":1737030695000, "voltage":4.3, "soc":100.0}]}]}> to topic 1/2/data[0m
+[0;32mI (6004) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 68760450, Last Timestamp: 62706424[0m
+[0;32mStored event at position 9[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 7285874, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 13288525, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 17253632, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 25200454, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 29173880, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 37077486, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 43119422, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 51119501, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 62706424, Sensor ID: 0[0m
+[0;32mEvent 9: Timestamp: 68760450, Sensor ID: 0[0m
+[0;32mEvent buffer full, waking up main CPU to process events[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (135) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (135) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (135) boot: Multicore bootloader[0m
+[0;32mI (140) boot: chip revision: v3.0[0m
+[0;32mI (143) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (148) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (153) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (157) boot: Enabling RNG early entropy source...[0m
+[0;32mI (163) boot: Partition Table:[0m
+[0;32mI (167) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (174) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (181) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (189) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (197) boot: End of partition table[0m
+[0;32mI (201) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (266) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (267) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (278) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (286) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (519) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (555) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (555) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (573) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (573) boot: Disabling RNG early entropy source...[0m
+[0;32mI (585) cpu_start: Multicore app[0m
+[0;32mI (594) cpu_start: Pro cpu start user code[0m
+[0;32mI (594) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (594) app_init: Application information:[0m
+[0;32mI (597) app_init: Project name:     PIR[0m
+[0;32mI (601) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (607) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (613) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (619) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (623) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (628) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (633) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (638) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (645) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (651) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (657) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (664) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (670) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (678) spi_flash: detected chip: generic[0m
+[0;32mI (681) spi_flash: flash io: dio[0m
+[0;33mW (685) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (698) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (710) main_task: Started on CPU0[0m
+[0;32mI (720) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (720) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (830) gauge: Power Mode: 0x1[0m
+[0;32mI (830) gauge: APA: 0x2A[0m
+[0;32mI (830) gauge: Battery Profile: 0x1[0m
+[0;32mI (830) gauge: Temp Mode: 0x0[0m
+[0;32mI (830) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (840) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (840) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (870) progress: Starting Wifi[0m
+[0;32mI (1960) progress: Starting Clock[0m
+[0;32mI (5960) progress: The current date/time in Germany is: Thu Jan 16 13:31:41 2025[0m
+[0;32mI (5960) progress: Starting MQTT[0m
+[0;32mI (5960) mqtt: [APP] Free memory: 225192 bytes[0m
+[0;32mI (5970) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5980) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (5980) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5990) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5990) mqtt: Connected to MQTT
+[0m
+[0;32mI (5990) progress: Wake count: 1[0m
+[0;32mI (6000) mqtt: Sent events: {"sensors":[{"name":"PIR","values":[{"timestamp":7285874000},{"timestamp":13288525000},{"timestamp":17253632000},{"timestamp":25200454000},{"timestamp":29173880000},{"timestamp":37077486000},{"timestamp":43119422000},{"timestamp":51119501000},{"timestamp":62706424000},{"timestamp":68760450000}]}]}[0m
+[0;32mI (6000) mqtt: MQTT_EVENT_PUBLISHED, msg_id=55803
+[0m
+[0;32mI (6030) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 74848153, Last Timestamp: 68760450[0m
+[0;32mStored event at position 0[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (64) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (64) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (77) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (86) boot: Enabling RNG early entropy source...[0m
+[0;32mI (91) boot: Partition Table:[0m
+[0;32mI (95) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (102) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (110) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (117) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (129) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (195) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (195) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (214) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (447) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (483) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (483) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (501) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (501) boot: Disabling RNG early entropy source...[0m
+[0;32mI (513) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu start user code[0m
+[0;32mI (522) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (522) app_init: Application information:[0m
+[0;32mI (525) app_init: Project name:     PIR[0m
+[0;32mI (529) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (535) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (541) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (547) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (551) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (556) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (561) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (566) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (573) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (609) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (626) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (638) main_task: Started on CPU0[0m
+[0;32mI (648) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (648) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (758) gauge: Power Mode: 0x1[0m
+[0;32mI (758) gauge: APA: 0x2A[0m
+[0;32mI (758) gauge: Battery Profile: 0x1[0m
+[0;32mI (758) gauge: Temp Mode: 0x0[0m
+[0;32mI (758) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (768) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (768) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (798) progress: Starting Wifi[0m
+[0;32mI (1878) progress: Starting Clock[0m
+[0;32mI (3878) progress: The current date/time in Germany is: Thu Jan 16 13:31:45 2025[0m
+[0;32mI (3878) progress: Starting MQTT[0m
+[0;32mI (3878) mqtt: [APP] Free memory: 225184 bytes[0m
+[0;32mI (3888) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3898) mqtt: Note free memory: 213592 bytes[0m
+[0;32mI (3898) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3908) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3908) mqtt: Connected to MQTT
+[0m
+[0;32mI (3908) progress: Wake count: 2[0m
+[0;32mI (3908) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 78821547, Last Timestamp: 74848153[0m
+[0;32mStored event at position 1[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (71) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (71) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (71) boot: Multicore bootloader[0m
+[0;32mI (75) boot: chip revision: v3.0[0m
+[0;32mI (79) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (84) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (88) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (93) boot: Enabling RNG early entropy source...[0m
+[0;32mI (98) boot: Partition Table:[0m
+[0;32mI (102) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (109) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (117) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (124) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (132) boot: End of partition table[0m
+[0;32mI (136) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (202) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (202) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (221) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (454) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (490) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (490) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) app_init: Application information:[0m
+[0;32mI (532) app_init: Project name:     PIR[0m
+[0;32mI (537) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (542) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (548) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (554) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (559) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (563) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (568) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;33mW (620) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (633) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (645) main_task: Started on CPU0[0m
+[0;32mI (655) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (655) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (765) gauge: Power Mode: 0x1[0m
+[0;32mI (765) gauge: APA: 0x2A[0m
+[0;32mI (765) gauge: Battery Profile: 0x1[0m
+[0;32mI (765) gauge: Temp Mode: 0x0[0m
+[0;32mI (765) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (775) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (775) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (805) progress: Starting Wifi[0m
+[0;32mI (1895) progress: Starting Clock[0m
+[0;32mI (3895) progress: The current date/time in Germany is: Thu Jan 16 13:31:49 2025[0m
+[0;32mI (3895) progress: Starting MQTT[0m
+[0;32mI (3895) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3905) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3915) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3915) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3925) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3935) mqtt: Connected to MQTT
+[0m
+[0;32mI (3935) progress: Wake count: 3[0m
+[0;32mI (3935) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 82712160, Last Timestamp: 78821547[0m
+[0;32mStored event at position 2[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (78) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (78) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (78) boot: Multicore bootloader[0m
+[0;32mI (82) boot: chip revision: v3.0[0m
+[0;32mI (86) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (91) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (95) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (100) boot: Enabling RNG early entropy source...[0m
+[0;32mI (105) boot: Partition Table:[0m
+[0;32mI (109) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (116) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (124) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (131) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (139) boot: End of partition table[0m
+[0;32mI (143) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (209) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (220) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (228) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (461) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (497) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (498) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (515) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (515) boot: Disabling RNG early entropy source...[0m
+[0;32mI (528) cpu_start: Multicore app[0m
+[0;32mI (536) cpu_start: Pro cpu start user code[0m
+[0;32mI (536) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (536) app_init: Application information:[0m
+[0;32mI (539) app_init: Project name:     PIR[0m
+[0;32mI (544) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (549) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (555) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (561) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (566) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (571) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (575) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (581) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (588) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (620) spi_flash: detected chip: generic[0m
+[0;32mI (623) spi_flash: flash io: dio[0m
+[0;33mW (627) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (641) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (662) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (772) gauge: Power Mode: 0x1[0m
+[0;32mI (772) gauge: APA: 0x2A[0m
+[0;32mI (772) gauge: Battery Profile: 0x1[0m
+[0;32mI (772) gauge: Temp Mode: 0x0[0m
+[0;32mI (772) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (782) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (782) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (812) progress: Starting Wifi[0m
+[0;32mI (1902) progress: Starting Clock[0m
+[0;32mI (3902) progress: The current date/time in Germany is: Thu Jan 16 13:31:53 2025[0m
+[0;32mI (3902) progress: Starting MQTT[0m
+[0;32mI (3902) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3912) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3922) mqtt: Note free memory: 211356 bytes[0m
+[0;32mI (3922) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3942) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3942) mqtt: Connected to MQTT
+[0m
+[0;32mI (3942) progress: Wake count: 4[0m
+[0;32mI (3942) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 86680851, Last Timestamp: 82712160[0m
+[0;32mStored event at position 3[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (85) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (85) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (85) boot: Multicore bootloader[0m
+[0;32mI (89) boot: chip revision: v3.0[0m
+[0;32mI (93) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (98) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (102) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (107) boot: Enabling RNG early entropy source...[0m
+[0;32mI (112) boot: Partition Table:[0m
+[0;32mI (116) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (123) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (131) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (138) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (146) boot: End of partition table[0m
+[0;32mI (150) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (216) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (227) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (235) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (468) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (504) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (505) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (522) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (543) cpu_start: Pro cpu start user code[0m
+[0;32mI (543) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (543) app_init: Application information:[0m
+[0;32mI (546) app_init: Project name:     PIR[0m
+[0;32mI (551) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (556) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (562) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (568) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (573) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (578) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (583) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (648) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (659) main_task: Started on CPU0[0m
+[0;32mI (669) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (669) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (779) gauge: Power Mode: 0x1[0m
+[0;32mI (779) gauge: APA: 0x2A[0m
+[0;32mI (779) gauge: Battery Profile: 0x1[0m
+[0;32mI (779) gauge: Temp Mode: 0x0[0m
+[0;32mI (779) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (789) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (789) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (819) progress: Starting Wifi[0m
+[0;32mI (1899) progress: Starting Clock[0m
+[0;32mI (7899) progress: The current date/time in Germany is: Thu Jan 16 13:32:01 2025[0m
+[0;32mI (7899) progress: Starting MQTT[0m
+[0;32mI (7899) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7909) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7919) mqtt: Note free memory: 213608 bytes[0m
+[0;32mI (7919) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7929) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7929) mqtt: Connected to MQTT
+[0m
+[0;32mI (7939) progress: Wake count: 5[0m
+[0;32mI (7939) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 94525404, Last Timestamp: 86680851[0m
+[0;32mStored event at position 4[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (92) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (92) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (92) boot: Multicore bootloader[0m
+[0;32mI (96) boot: chip revision: v3.0[0m
+[0;32mI (100) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (105) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (109) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (114) boot: Enabling RNG early entropy source...[0m
+[0;32mI (119) boot: Partition Table:[0m
+[0;32mI (123) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (131) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (138) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (146) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (153) boot: End of partition table[0m
+[0;32mI (157) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (223) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (235) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (242) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (476) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (511) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (512) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (530) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (550) cpu_start: Pro cpu start user code[0m
+[0;32mI (550) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) app_init: Application information:[0m
+[0;32mI (553) app_init: Project name:     PIR[0m
+[0;32mI (558) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (563) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (569) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (575) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (580) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (585) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (590) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (635) spi_flash: detected chip: generic[0m
+[0;32mI (638) spi_flash: flash io: dio[0m
+[0;33mW (642) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (655) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (676) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (786) gauge: Power Mode: 0x1[0m
+[0;32mI (786) gauge: APA: 0x2A[0m
+[0;32mI (786) gauge: Battery Profile: 0x1[0m
+[0;32mI (786) gauge: Temp Mode: 0x0[0m
+[0;32mI (786) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (796) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (796) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (826) progress: Starting Wifi[0m
+[0;32mI (1916) progress: Starting Clock[0m
+[0;32mI (3916) progress: The current date/time in Germany is: Thu Jan 16 13:32:05 2025[0m
+[0;32mI (3916) progress: Starting MQTT[0m
+[0;32mI (3916) mqtt: [APP] Free memory: 225188 bytes[0m
+[0;32mI (3926) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3926) mqtt: Note free memory: 214768 bytes[0m
+[0;32mI (3926) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3946) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3946) mqtt: Connected to MQTT
+[0m
+[0;32mI (3946) progress: Wake count: 6[0m
+[0;32mI (5946) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 100390754, Last Timestamp: 94525404[0m
+[0;32mStored event at position 5[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 100390754, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (99) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (99) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (99) boot: Multicore bootloader[0m
+[0;32mI (103) boot: chip revision: v3.0[0m
+[0;32mI (107) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (112) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (117) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (121) boot: Enabling RNG early entropy source...[0m
+[0;32mI (127) boot: Partition Table:[0m
+[0;32mI (130) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (138) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (145) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (153) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (160) boot: End of partition table[0m
+[0;32mI (165) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (230) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (231) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (242) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (250) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (483) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (519) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (519) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (537) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (537) boot: Disabling RNG early entropy source...[0m
+[0;32mI (549) cpu_start: Multicore app[0m
+[0;32mI (558) cpu_start: Pro cpu start user code[0m
+[0;32mI (558) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (558) app_init: Application information:[0m
+[0;32mI (561) app_init: Project name:     PIR[0m
+[0;32mI (565) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (571) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (577) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (582) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (587) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (592) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (597) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (602) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (609) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (662) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) main_task: Started on CPU0[0m
+[0;32mI (684) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (684) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (794) gauge: Power Mode: 0x1[0m
+[0;32mI (794) gauge: APA: 0x2A[0m
+[0;32mI (794) gauge: Battery Profile: 0x1[0m
+[0;32mI (794) gauge: Temp Mode: 0x0[0m
+[0;32mI (804) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (804) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (804) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (834) progress: Starting Wifi[0m
+[0;32mI (1924) progress: Starting Clock[0m
+[0;32mI (3924) progress: The current date/time in Germany is: Thu Jan 16 13:32:11 2025[0m
+[0;32mI (3924) progress: Starting MQTT[0m
+[0;32mI (3924) mqtt: [APP] Free memory: 225168 bytes[0m
+[0;32mI (3934) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3944) mqtt: Note free memory: 213592 bytes[0m
+[0;32mI (3944) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (4544) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (4544) mqtt: Connected to MQTT
+[0m
+[0;32mI (4544) progress: Wake count: 7[0m
+[0;32mI (4544) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 105176856, Last Timestamp: 100390754[0m
+[0;32mStored event at position 6[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 100390754, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 105176856, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (106) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (106) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (106) boot: Multicore bootloader[0m
+[0;32mI (111) boot: chip revision: v3.0[0m
+[0;32mI (115) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (119) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (124) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (129) boot: Enabling RNG early entropy source...[0m
+[0;32mI (134) boot: Partition Table:[0m
+[0;32mI (138) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (145) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (160) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (168) boot: End of partition table[0m
+[0;32mI (172) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (238) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (238) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (249) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (257) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (490) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (526) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (527) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (544) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (544) boot: Disabling RNG early entropy source...[0m
+[0;32mI (557) cpu_start: Multicore app[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (565) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (565) app_init: Application information:[0m
+[0;32mI (568) app_init: Project name:     PIR[0m
+[0;32mI (573) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (578) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (584) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (590) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (595) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (599) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (604) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (609) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (617) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (629) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (642) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (649) spi_flash: detected chip: generic[0m
+[0;32mI (652) spi_flash: flash io: dio[0m
+[0;33mW (656) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (670) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (681) main_task: Started on CPU0[0m
+[0;32mI (691) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (691) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (801) gauge: Power Mode: 0x1[0m
+[0;32mI (801) gauge: APA: 0x2A[0m
+[0;32mI (801) gauge: Battery Profile: 0x1[0m
+[0;32mI (801) gauge: Temp Mode: 0x0[0m
+[0;32mI (801) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (801) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (811) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (841) progress: Starting Wifi[0m
+[0;32mI (1921) progress: Starting Clock[0m
+[0;32mI (3921) progress: The current date/time in Germany is: Thu Jan 16 13:32:15 2025[0m
+[0;32mI (3921) progress: Starting MQTT[0m
+[0;32mI (3921) mqtt: [APP] Free memory: 225148 bytes[0m
+[0;32mI (3931) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3941) mqtt: Note free memory: 213768 bytes[0m
+[0;32mI (3941) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3951) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3951) mqtt: Connected to MQTT
+[0m
+[0;32mI (3951) progress: Wake count: 8[0m
+[0;32mI (3951) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 109296189, Last Timestamp: 105176856[0m
+[0;32mStored event at position 7[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 100390754, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 105176856, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 109296189, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (113) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (113) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (113) boot: Multicore bootloader[0m
+[0;32mI (118) boot: chip revision: v3.0[0m
+[0;32mI (122) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (127) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (131) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (136) boot: Enabling RNG early entropy source...[0m
+[0;32mI (141) boot: Partition Table:[0m
+[0;32mI (145) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (152) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (160) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (167) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (175) boot: End of partition table[0m
+[0;32mI (179) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (245) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (264) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (497) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (533) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (534) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+[0;32mI (564) cpu_start: Multicore app[0m
+[0;32mI (572) cpu_start: Pro cpu start user code[0m
+[0;32mI (572) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (572) app_init: Application information:[0m
+[0;32mI (575) app_init: Project name:     PIR[0m
+[0;32mI (580) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (585) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (591) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (597) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (602) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (607) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (611) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (617) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (624) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (630) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (636) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (642) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (656) spi_flash: detected chip: generic[0m
+[0;32mI (659) spi_flash: flash io: dio[0m
+[0;33mW (663) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (677) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (688) main_task: Started on CPU0[0m
+[0;32mI (698) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (698) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (808) gauge: Power Mode: 0x1[0m
+[0;32mI (808) gauge: APA: 0x2A[0m
+[0;32mI (808) gauge: Battery Profile: 0x1[0m
+[0;32mI (808) gauge: Temp Mode: 0x0[0m
+[0;32mI (818) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (818) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (818) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (848) progress: Starting Wifi[0m
+[0;32mI (1938) progress: Starting Clock[0m
+[0;32mI (5938) progress: The current date/time in Germany is: Thu Jan 16 13:32:21 2025[0m
+[0;32mI (5938) progress: Starting MQTT[0m
+[0;32mI (5938) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (5948) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5958) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (5958) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5968) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5968) mqtt: Connected to MQTT
+[0m
+[0;32mI (5968) progress: Wake count: 9[0m
+[0;32mI (5968) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 115104693, Last Timestamp: 109296189[0m
+[0;32mStored event at position 8[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 100390754, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 105176856, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 109296189, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 115104693, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (120) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (120) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (120) boot: Multicore bootloader[0m
+[0;32mI (125) boot: chip revision: v3.0[0m
+[0;32mI (129) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (134) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (138) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (143) boot: Enabling RNG early entropy source...[0m
+[0;32mI (148) boot: Partition Table:[0m
+[0;32mI (152) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (159) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (167) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (174) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (182) boot: End of partition table[0m
+[0;32mI (186) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (252) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (252) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (263) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (271) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (504) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (540) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (541) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (558) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (559) boot: Disabling RNG early entropy source...[0m
+[0;32mI (571) cpu_start: Multicore app[0m
+[0;32mI (579) cpu_start: Pro cpu start user code[0m
+[0;32mI (579) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (579) app_init: Application information:[0m
+[0;32mI (582) app_init: Project name:     PIR[0m
+[0;32mI (587) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (592) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (598) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (604) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (609) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (614) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (619) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (624) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (631) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (637) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (643) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (656) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (663) spi_flash: detected chip: generic[0m
+[0;32mI (667) spi_flash: flash io: dio[0m
+[0;33mW (670) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (684) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (695) main_task: Started on CPU0[0m
+[0;32mI (705) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (705) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (815) gauge: Power Mode: 0x1[0m
+[0;32mI (815) gauge: APA: 0x2A[0m
+[0;32mI (815) gauge: Battery Profile: 0x1[0m
+[0;32mI (815) gauge: Temp Mode: 0x0[0m
+[0;32mI (815) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (825) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (825) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (855) progress: Starting Wifi[0m
+[0;32mI (1935) progress: Starting Clock[0m
+[0;32mI (7935) progress: The current date/time in Germany is: Thu Jan 16 13:32:29 2025[0m
+[0;32mI (7935) progress: Starting MQTT[0m
+[0;32mI (7935) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7945) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7955) mqtt: Note free memory: 213524 bytes[0m
+[0;32mI (7955) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7965) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7965) mqtt: Connected to MQTT
+[0m
+[0;32mI (7965) progress: Wake count: 10[0m
+[0;32mI (7965) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 123099856, Last Timestamp: 115104693[0m
+[0;32mStored event at position 9[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 74848153, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 78821547, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 82712160, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 86680851, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 94525404, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 100390754, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 105176856, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 109296189, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 115104693, Sensor ID: 0[0m
+[0;32mEvent 9: Timestamp: 123099856, Sensor ID: 0[0m
+[0;32mEvent buffer full, waking up main CPU to process events[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (135) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (135) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (135) boot: Multicore bootloader[0m
+[0;32mI (140) boot: chip revision: v3.0[0m
+[0;32mI (144) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (149) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (153) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (158) boot: Enabling RNG early entropy source...[0m
+[0;32mI (164) boot: Partition Table:[0m
+[0;32mI (167) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (175) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (182) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (190) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (197) boot: End of partition table[0m
+[0;32mI (202) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (267) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (267) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (279) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (287) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (520) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (555) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (556) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (574) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (574) boot: Disabling RNG early entropy source...[0m
+[0;32mI (586) cpu_start: Multicore app[0m
+[0;32mI (595) cpu_start: Pro cpu start user code[0m
+[0;32mI (595) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (595) app_init: Application information:[0m
+[0;32mI (598) app_init: Project name:     PIR[0m
+[0;32mI (602) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (607) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (613) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (619) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (624) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (629) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (634) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (639) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (646) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (652) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (658) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (664) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (671) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (679) spi_flash: detected chip: generic[0m
+[0;32mI (682) spi_flash: flash io: dio[0m
+[0;33mW (686) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (699) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (710) main_task: Started on CPU0[0m
+[0;32mI (720) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (720) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (830) gauge: Power Mode: 0x1[0m
+[0;32mI (830) gauge: APA: 0x2A[0m
+[0;32mI (830) gauge: Battery Profile: 0x1[0m
+[0;32mI (830) gauge: Temp Mode: 0x0[0m
+[0;32mI (840) gauge: Voltage: 4.33	RSOC: 100.0%[0m
+[0;32mI (840) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (840) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (870) progress: Starting Wifi[0m
+[0;32mI (1950) progress: Starting Clock[0m
+[0;32mI (3950) progress: The current date/time in Germany is: Thu Jan 16 13:32:33 2025[0m
+[0;32mI (3950) progress: Starting MQTT[0m
+[0;32mI (3950) mqtt: [APP] Free memory: 225172 bytes[0m
+[0;32mI (3960) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3970) mqtt: Note free memory: 213768 bytes[0m
+[0;32mI (3970) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3980) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3980) mqtt: Connected to MQTT
+[0m
+[0;32mI (3980) progress: Sending battery status to MQTT[0m
+[0;32mI (3990) mqtt: Sent <{"sensors":[{"name":"battery","values":[{"timestamp":1737030753000, "voltage":4.3, "soc":100.0}]}]}> to topic 1/2/data[0m
+[0;32mI (4000) mqtt: Sent events: {"sensors":[{"name":"PIR","values":[{"timestamp":74848153000},{"timestamp":78821547000},{"timestamp":82712160000},{"timestamp":86680851000},{"timestamp":94525404000},{"timestamp":100390754000},{"timestamp":105176856000},{"timestamp":109296189000},{"timestamp":115104693000},{"timestamp":123099856000}]}]}[0m
+[0;32mI (4010) mqtt: MQTT_EVENT_PUBLISHED, msg_id=65363
+[0m
+[0;32mI (4040) mqtt: MQTT_EVENT_PUBLISHED, msg_id=39909
+[0m
+[0;32mI (4040) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 127436559, Last Timestamp: 123099856[0m
+[0;32mStored event at position 0[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (64) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (64) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (77) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (86) boot: Enabling RNG early entropy source...[0m
+[0;32mI (91) boot: Partition Table:[0m
+[0;32mI (95) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (102) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (110) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (117) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (129) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (195) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (195) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (214) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (447) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (483) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (484) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (501) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (501) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu start user code[0m
+[0;32mI (522) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (522) app_init: Application information:[0m
+[0;32mI (525) app_init: Project name:     PIR[0m
+[0;32mI (530) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (535) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (541) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (547) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (552) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (557) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (561) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (609) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (627) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (638) main_task: Started on CPU0[0m
+[0;32mI (648) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (648) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (758) gauge: Power Mode: 0x1[0m
+[0;32mI (758) gauge: APA: 0x2A[0m
+[0;32mI (758) gauge: Battery Profile: 0x1[0m
+[0;32mI (758) gauge: Temp Mode: 0x0[0m
+[0;32mI (758) gauge: Voltage: 4.21	RSOC: 100.0%[0m
+[0;32mI (768) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (768) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (798) progress: Starting Wifi[0m
+[0;32mI (1878) progress: Starting Clock[0m
+[0;32mI (5878) progress: The current date/time in Germany is: Thu Jan 16 13:32:39 2025[0m
+[0;32mI (5878) progress: Starting MQTT[0m
+[0;32mI (5878) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (5888) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5888) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (5898) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5908) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5908) mqtt: Connected to MQTT
+[0m
+[0;32mI (5908) progress: Wake count: 1[0m
+[0;32mI (5908) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 133210177, Last Timestamp: 127436559[0m
+[0;32mStored event at position 1[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (71) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (71) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (71) boot: Multicore bootloader[0m
+[0;32mI (76) boot: chip revision: v3.0[0m
+[0;32mI (79) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (84) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (89) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (93) boot: Enabling RNG early entropy source...[0m
+[0;32mI (98) boot: Partition Table:[0m
+[0;32mI (102) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (109) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (117) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (125) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (132) boot: End of partition table[0m
+[0;32mI (136) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (202) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (202) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (214) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (221) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (455) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (490) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (491) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) app_init: Application information:[0m
+[0;32mI (532) app_init: Project name:     PIR[0m
+[0;32mI (537) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (542) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (548) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (554) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (559) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (564) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (569) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (614) spi_flash: detected chip: generic[0m
+[0;32mI (617) spi_flash: flash io: dio[0m
+[0;33mW (621) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (634) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (645) main_task: Started on CPU0[0m
+[0;32mI (655) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (655) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (765) gauge: Power Mode: 0x1[0m
+[0;32mI (765) gauge: APA: 0x2A[0m
+[0;32mI (765) gauge: Battery Profile: 0x1[0m
+[0;32mI (765) gauge: Temp Mode: 0x0[0m
+[0;32mI (765) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (775) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (775) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (805) progress: Starting Wifi[0m
+[0;32mI (1895) progress: Starting Clock[0m
+[0;32mI (5895) progress: The current date/time in Germany is: Thu Jan 16 13:32:45 2025[0m
+[0;32mI (5895) progress: Starting MQTT[0m
+[0;32mI (5895) mqtt: [APP] Free memory: 225188 bytes[0m
+[0;32mI (5905) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5915) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (5915) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5925) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5935) mqtt: Connected to MQTT
+[0m
+[0;32mI (5935) progress: Wake count: 2[0m
+[0;32mI (5935) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 139114072, Last Timestamp: 133210177[0m
+[0;32mStored event at position 2[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (78) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (78) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (78) boot: Multicore bootloader[0m
+[0;32mI (83) boot: chip revision: v3.0[0m
+[0;32mI (86) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (91) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (96) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (100) boot: Enabling RNG early entropy source...[0m
+[0;32mI (106) boot: Partition Table:[0m
+[0;32mI (109) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (117) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (124) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (132) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (139) boot: End of partition table[0m
+[0;32mI (144) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (209) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (221) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (462) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (498) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (498) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (516) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (516) boot: Disabling RNG early entropy source...[0m
+[0;32mI (528) cpu_start: Multicore app[0m
+[0;32mI (537) cpu_start: Pro cpu start user code[0m
+[0;32mI (537) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (537) app_init: Application information:[0m
+[0;32mI (540) app_init: Project name:     PIR[0m
+[0;32mI (544) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (550) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (555) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (561) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (566) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (571) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (576) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (581) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (588) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (607) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (621) spi_flash: detected chip: generic[0m
+[0;32mI (624) spi_flash: flash io: dio[0m
+[0;33mW (628) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (641) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (662) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (772) gauge: Power Mode: 0x1[0m
+[0;32mI (772) gauge: APA: 0x2A[0m
+[0;32mI (772) gauge: Battery Profile: 0x1[0m
+[0;32mI (772) gauge: Temp Mode: 0x0[0m
+[0;32mI (782) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (782) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (782) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (812) progress: Starting Wifi[0m
+[0;32mI (1902) progress: Starting Clock[0m
+[0;32mI (3902) progress: The current date/time in Germany is: Thu Jan 16 13:32:49 2025[0m
+[0;32mI (3902) progress: Starting MQTT[0m
+[0;32mI (3902) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3912) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3922) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (3922) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3932) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3932) mqtt: Connected to MQTT
+[0m
+[0;32mI (3932) progress: Wake count: 3[0m
+[0;32mI (5932) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 3[0m
+[0;32mCurrent Timestamp: 144870582, Last Timestamp: 139114072[0m
+[0;32mWake stub: timer wakeup detected[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (78) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (79) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (79) boot: Multicore bootloader[0m
+[0;32mI (83) boot: chip revision: v3.0[0m
+[0;32mI (87) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (92) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (96) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (101) boot: Enabling RNG early entropy source...[0m
+[0;32mI (106) boot: Partition Table:[0m
+[0;32mI (110) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (117) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (125) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (132) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (144) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (210) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (221) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (462) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (498) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (499) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (516) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (516) boot: Disabling RNG early entropy source...[0m
+[0;32mI (529) cpu_start: Multicore app[0m
+[0;32mI (537) cpu_start: Pro cpu start user code[0m
+[0;32mI (537) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (537) app_init: Application information:[0m
+[0;32mI (540) app_init: Project name:     PIR[0m
+[0;32mI (545) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (550) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (556) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (562) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (567) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (571) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (576) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (581) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (589) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (607) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (614) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (621) spi_flash: detected chip: generic[0m
+[0;32mI (624) spi_flash: flash io: dio[0m
+[0;33mW (628) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (642) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (663) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (773) gauge: Power Mode: 0x1[0m
+[0;32mI (773) gauge: APA: 0x2A[0m
+[0;32mI (773) gauge: Battery Profile: 0x1[0m
+[0;32mI (773) gauge: Temp Mode: 0x0[0m
+[0;32mI (773) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (773) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (783) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (813) progress: Starting Wifi[0m
+[0;32mI (1893) progress: Starting Clock[0m
+[0;32mI (5893) progress: The current date/time in Germany is: Thu Jan 16 13:32:57 2025[0m
+[0;32mI (5893) progress: Starting MQTT[0m
+[0;32mI (5893) mqtt: [APP] Free memory: 225180 bytes[0m
+[0;32mI (5903) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5913) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (5913) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (6223) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (6223) mqtt: Connected to MQTT
+[0m
+[0;32mI (6223) progress: Wake count: 4[0m
+[0;32mI (6223) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 151312617, Last Timestamp: 139114072[0m
+[0;32mStored event at position 3[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (85) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (85) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (85) boot: Multicore bootloader[0m
+[0;32mI (90) boot: chip revision: v3.0[0m
+[0;32mI (94) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (98) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (103) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (107) boot: Enabling RNG early entropy source...[0m
+[0;32mI (113) boot: Partition Table:[0m
+[0;32mI (116) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (124) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (131) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (139) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (147) boot: End of partition table[0m
+[0;32mI (151) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (217) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (228) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (236) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (469) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (505) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (505) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (544) cpu_start: Pro cpu start user code[0m
+[0;32mI (544) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (544) app_init: Application information:[0m
+[0;32mI (547) app_init: Project name:     PIR[0m
+[0;32mI (551) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (557) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (563) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (569) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (573) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (578) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (583) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (614) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (635) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (648) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) main_task: Started on CPU0[0m
+[0;32mI (670) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (670) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (780) gauge: Power Mode: 0x1[0m
+[0;32mI (780) gauge: APA: 0x2A[0m
+[0;32mI (780) gauge: Battery Profile: 0x1[0m
+[0;32mI (780) gauge: Temp Mode: 0x0[0m
+[0;32mI (790) gauge: Voltage: 4.16	RSOC: 98.0%[0m
+[0;32mI (790) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (790) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (820) progress: Starting Wifi[0m
+[0;32mI (1900) progress: Starting Clock[0m
+[0;32mI (3900) progress: The current date/time in Germany is: Thu Jan 16 13:33:01 2025[0m
+[0;32mI (3900) progress: Starting MQTT[0m
+[0;32mI (3900) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3910) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3920) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3920) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3930) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3930) mqtt: Connected to MQTT
+[0m
+[0;32mI (3930) progress: Wake count: 5[0m
+[0;32mI (3930) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 155537888, Last Timestamp: 151312617[0m
+[0;32mStored event at position 4[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (92) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (92) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (92) boot: Multicore bootloader[0m
+[0;32mI (97) boot: chip revision: v3.0[0m
+[0;32mI (101) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (105) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (110) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (115) boot: Enabling RNG early entropy source...[0m
+[0;32mI (120) boot: Partition Table:[0m
+[0;32mI (124) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (131) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (139) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (146) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (154) boot: End of partition table[0m
+[0;32mI (158) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (224) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (235) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (243) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (476) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (512) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (513) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (530) boot: Disabling RNG early entropy source...[0m
+[0;32mI (543) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu start user code[0m
+[0;32mI (551) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) app_init: Application information:[0m
+[0;32mI (554) app_init: Project name:     PIR[0m
+[0;32mI (559) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (564) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (570) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (576) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (581) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (585) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (590) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (603) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (621) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (635) spi_flash: detected chip: generic[0m
+[0;32mI (638) spi_flash: flash io: dio[0m
+[0;33mW (642) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (655) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (667) main_task: Started on CPU0[0m
+[0;32mI (677) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (677) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (787) gauge: Power Mode: 0x1[0m
+[0;32mI (787) gauge: APA: 0x2A[0m
+[0;32mI (787) gauge: Battery Profile: 0x1[0m
+[0;32mI (787) gauge: Temp Mode: 0x0[0m
+[0;32mI (787) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (797) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (797) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (827) progress: Starting Wifi[0m
+[0;32mI (1907) progress: Starting Clock[0m
+[0;32mI (7907) progress: The current date/time in Germany is: Thu Jan 16 13:33:09 2025[0m
+[0;32mI (7907) progress: Starting MQTT[0m
+[0;32mI (7907) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7917) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7927) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (7927) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7937) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7937) mqtt: Connected to MQTT
+[0m
+[0;32mI (7937) progress: Wake count: 6[0m
+[0;32mI (7937) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 163105695, Last Timestamp: 155537888[0m
+[0;32mStored event at position 5[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 163105695, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (99) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (99) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (99) boot: Multicore bootloader[0m
+[0;32mI (104) boot: chip revision: v3.0[0m
+[0;32mI (108) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (113) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (117) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (122) boot: Enabling RNG early entropy source...[0m
+[0;32mI (127) boot: Partition Table:[0m
+[0;32mI (131) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (138) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (146) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (153) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (161) boot: End of partition table[0m
+[0;32mI (165) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (231) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (231) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (242) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (250) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (483) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (519) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (520) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (537) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (537) boot: Disabling RNG early entropy source...[0m
+[0;32mI (550) cpu_start: Multicore app[0m
+[0;32mI (558) cpu_start: Pro cpu start user code[0m
+[0;32mI (558) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (558) app_init: Application information:[0m
+[0;32mI (561) app_init: Project name:     PIR[0m
+[0;32mI (566) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (571) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (577) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (583) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (588) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (593) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (597) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (603) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (610) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) main_task: Started on CPU0[0m
+[0;32mI (684) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (684) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (794) gauge: Power Mode: 0x1[0m
+[0;32mI (794) gauge: APA: 0x2A[0m
+[0;32mI (794) gauge: Battery Profile: 0x1[0m
+[0;32mI (794) gauge: Temp Mode: 0x0[0m
+[0;32mI (794) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (804) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (804) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (834) progress: Starting Wifi[0m
+[0;32mI (1914) progress: Starting Clock[0m
+[0;32mI (5914) progress: The current date/time in Germany is: Thu Jan 16 13:33:15 2025[0m
+[0;32mI (5914) progress: Starting MQTT[0m
+[0;32mI (5914) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (5924) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5934) mqtt: Note free memory: 213636 bytes[0m
+[0;32mI (5934) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5944) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5944) mqtt: Connected to MQTT
+[0m
+[0;32mI (5944) progress: Wake count: 7[0m
+[0;32mI (5944) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 169223888, Last Timestamp: 163105695[0m
+[0;32mStored event at position 6[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 163105695, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 169223888, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (106) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (106) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (106) boot: Multicore bootloader[0m
+[0;32mI (111) boot: chip revision: v3.0[0m
+[0;32mI (115) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (120) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (124) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (129) boot: Enabling RNG early entropy source...[0m
+[0;32mI (135) boot: Partition Table:[0m
+[0;32mI (138) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (146) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (161) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (168) boot: End of partition table[0m
+[0;32mI (173) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (238) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (238) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (250) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (258) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (491) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (526) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (527) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (545) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (545) boot: Disabling RNG early entropy source...[0m
+[0;32mI (557) cpu_start: Multicore app[0m
+[0;32mI (566) cpu_start: Pro cpu start user code[0m
+[0;32mI (566) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (566) app_init: Application information:[0m
+[0;32mI (569) app_init: Project name:     PIR[0m
+[0;32mI (573) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (578) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (584) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (590) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (595) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (600) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (605) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (610) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (617) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (623) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (629) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (642) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (650) spi_flash: detected chip: generic[0m
+[0;32mI (653) spi_flash: flash io: dio[0m
+[0;33mW (657) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (670) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (681) main_task: Started on CPU0[0m
+[0;32mI (691) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (691) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (801) gauge: Power Mode: 0x1[0m
+[0;32mI (801) gauge: APA: 0x2A[0m
+[0;32mI (801) gauge: Battery Profile: 0x1[0m
+[0;32mI (801) gauge: Temp Mode: 0x0[0m
+[0;32mI (801) gauge: Voltage: 4.05	RSOC: 85.0%[0m
+[0;32mI (811) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (811) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (841) progress: Starting Wifi[0m
+[0;32mI (1921) progress: Starting Clock[0m
+[0;32mI (3921) progress: The current date/time in Germany is: Thu Jan 16 13:33:19 2025[0m
+[0;32mI (3921) progress: Starting MQTT[0m
+[0;32mI (3921) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3931) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3941) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3941) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3951) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3961) mqtt: Connected to MQTT
+[0m
+[0;32mI (3961) progress: Wake count: 8[0m
+[0;32mI (3961) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 173282357, Last Timestamp: 169223888[0m
+[0;32mStored event at position 7[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 163105695, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 169223888, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 173282357, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (113) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (113) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (114) boot: Multicore bootloader[0m
+[0;32mI (118) boot: chip revision: v3.0[0m
+[0;32mI (122) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (127) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (132) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (136) boot: Enabling RNG early entropy source...[0m
+[0;32mI (142) boot: Partition Table:[0m
+[0;32mI (145) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (153) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (160) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (175) boot: End of partition table[0m
+[0;32mI (180) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (246) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (257) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (265) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (498) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (534) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (534) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (552) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (552) boot: Disabling RNG early entropy source...[0m
+[0;32mI (564) cpu_start: Multicore app[0m
+[0;32mI (573) cpu_start: Pro cpu start user code[0m
+[0;32mI (573) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (573) app_init: Application information:[0m
+[0;32mI (576) app_init: Project name:     PIR[0m
+[0;32mI (580) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (586) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (592) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (597) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (602) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (607) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (612) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (617) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (624) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (630) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (636) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (643) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (649) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (657) spi_flash: detected chip: generic[0m
+[0;32mI (660) spi_flash: flash io: dio[0m
+[0;33mW (664) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (677) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (688) main_task: Started on CPU0[0m
+[0;32mI (698) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (698) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (808) gauge: Power Mode: 0x1[0m
+[0;32mI (808) gauge: APA: 0x2A[0m
+[0;32mI (808) gauge: Battery Profile: 0x1[0m
+[0;32mI (808) gauge: Temp Mode: 0x0[0m
+[0;32mI (818) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (818) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (818) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (848) progress: Starting Wifi[0m
+[0;32mI (1938) progress: Starting Clock[0m
+[0;32mI (7938) progress: The current date/time in Germany is: Thu Jan 16 13:33:27 2025[0m
+[0;32mI (7938) progress: Starting MQTT[0m
+[0;32mI (7938) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7948) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7958) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (7958) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7968) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7968) mqtt: Connected to MQTT
+[0m
+[0;32mI (7968) progress: Wake count: 9[0m
+[0;32mI (7968) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 180981169, Last Timestamp: 173282357[0m
+[0;32mStored event at position 8[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 163105695, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 169223888, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 173282357, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 180981169, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (120) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (121) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (121) boot: Multicore bootloader[0m
+[0;32mI (125) boot: chip revision: v3.0[0m
+[0;32mI (129) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (134) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (139) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (143) boot: Enabling RNG early entropy source...[0m
+[0;32mI (149) boot: Partition Table:[0m
+[0;32mI (152) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (160) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (167) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (175) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (183) boot: End of partition table[0m
+[0;32mI (187) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (252) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (253) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (264) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (272) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (505) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (541) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (541) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (559) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (559) boot: Disabling RNG early entropy source...[0m
+[0;32mI (571) cpu_start: Multicore app[0m
+[0;32mI (580) cpu_start: Pro cpu start user code[0m
+[0;32mI (580) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (580) app_init: Application information:[0m
+[0;32mI (583) app_init: Project name:     PIR[0m
+[0;32mI (587) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (593) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (599) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (604) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (609) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (614) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (619) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (624) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (631) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (637) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (643) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (650) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (656) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (664) spi_flash: detected chip: generic[0m
+[0;32mI (667) spi_flash: flash io: dio[0m
+[0;33mW (671) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (684) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (696) main_task: Started on CPU0[0m
+[0;32mI (706) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (706) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (816) gauge: Power Mode: 0x1[0m
+[0;32mI (816) gauge: APA: 0x2A[0m
+[0;32mI (816) gauge: Battery Profile: 0x1[0m
+[0;32mI (816) gauge: Temp Mode: 0x0[0m
+[0;32mI (816) gauge: Voltage: 4.46	RSOC: 100.0%[0m
+[0;32mI (826) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (826) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (856) progress: Starting Wifi[0m
+[0;32mI (1946) progress: Starting Clock[0m
+[0;32mI (7946) progress: The current date/time in Germany is: Thu Jan 16 13:33:35 2025[0m
+[0;32mI (7946) progress: Starting MQTT[0m
+[0;32mI (7946) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (7956) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (7966) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (7966) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (7976) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (7976) mqtt: Connected to MQTT
+[0m
+[0;32mI (7976) progress: Wake count: 10[0m
+[0;32mI (7986) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 189230933, Last Timestamp: 180981169[0m
+[0;32mStored event at position 9[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 127436559, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 133210177, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 139114072, Sensor ID: 0[0m
+[0;32mEvent 3: Timestamp: 151312617, Sensor ID: 0[0m
+[0;32mEvent 4: Timestamp: 155537888, Sensor ID: 0[0m
+[0;32mEvent 5: Timestamp: 163105695, Sensor ID: 0[0m
+[0;32mEvent 6: Timestamp: 169223888, Sensor ID: 0[0m
+[0;32mEvent 7: Timestamp: 173282357, Sensor ID: 0[0m
+[0;32mEvent 8: Timestamp: 180981169, Sensor ID: 0[0m
+[0;32mEvent 9: Timestamp: 189230933, Sensor ID: 0[0m
+[0;32mEvent buffer full, waking up main CPU to process events[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (136) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (136) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (136) boot: Multicore bootloader[0m
+[0;32mI (141) boot: chip revision: v3.0[0m
+[0;32mI (145) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (149) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (154) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (158) boot: Enabling RNG early entropy source...[0m
+[0;32mI (164) boot: Partition Table:[0m
+[0;32mI (168) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (175) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (183) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (190) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (198) boot: End of partition table[0m
+[0;32mI (202) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (268) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (279) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (287) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (520) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (556) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (556) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (574) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (574) boot: Disabling RNG early entropy source...[0m
+[0;32mI (586) cpu_start: Multicore app[0m
+[0;32mI (595) cpu_start: Pro cpu start user code[0m
+[0;32mI (595) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (595) app_init: Application information:[0m
+[0;32mI (598) app_init: Project name:     PIR[0m
+[0;32mI (602) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (608) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (614) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (620) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (625) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (629) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (634) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (639) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (646) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (652) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (659) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (665) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (671) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (679) spi_flash: detected chip: generic[0m
+[0;32mI (682) spi_flash: flash io: dio[0m
+[0;33mW (686) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (699) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (711) main_task: Started on CPU0[0m
+[0;32mI (721) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (721) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (831) gauge: Power Mode: 0x1[0m
+[0;32mI (831) gauge: APA: 0x2A[0m
+[0;32mI (831) gauge: Battery Profile: 0x1[0m
+[0;32mI (831) gauge: Temp Mode: 0x0[0m
+[0;32mI (841) gauge: Voltage: 4.20	RSOC: 100.0%[0m
+[0;32mI (841) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (841) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (871) progress: Starting Wifi[0m
+[0;32mI (1951) progress: Starting Clock[0m
+[0;32mI (3951) progress: The current date/time in Germany is: Thu Jan 16 13:33:39 2025[0m
+[0;32mI (3951) progress: Starting MQTT[0m
+[0;32mI (3951) mqtt: [APP] Free memory: 225176 bytes[0m
+[0;32mI (3961) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3971) mqtt: Note free memory: 213804 bytes[0m
+[0;32mI (3971) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3981) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3981) mqtt: Connected to MQTT
+[0m
+[0;32mI (3981) progress: Sending battery status to MQTT[0m
+[0;32mI (3991) mqtt: Sent <{"sensors":[{"name":"battery","values":[{"timestamp":1737030819000, "voltage":4.2, "soc":100.0}]}]}> to topic 1/2/data[0m
+[0;32mI (4001) mqtt: Sent events: {"sensors":[{"name":"PIR","values":[{"timestamp":127436559000},{"timestamp":133210177000},{"timestamp":139114072000},{"timestamp":151312617000},{"timestamp":155537888000},{"timestamp":163105695000},{"timestamp":169223888000},{"timestamp":173282357000},{"timestamp":180981169000},{"timestamp":189230933000}]}]}[0m
+[0;32mI (4011) mqtt: MQTT_EVENT_PUBLISHED, msg_id=27945
+[0m
+[0;32mI (4041) mqtt: MQTT_EVENT_PUBLISHED, msg_id=61476
+[0m
+[0;32mI (4041) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 193461934, Last Timestamp: 189230933[0m
+[0;32mStored event at position 0[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 193461934, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (64) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (64) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (72) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (77) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (86) boot: Enabling RNG early entropy source...[0m
+[0;32mI (91) boot: Partition Table:[0m
+[0;32mI (95) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (102) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (110) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (117) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (125) boot: End of partition table[0m
+[0;32mI (129) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (195) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (195) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (214) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (447) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (483) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (484) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (501) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (501) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu start user code[0m
+[0;32mI (522) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (522) app_init: Application information:[0m
+[0;32mI (525) app_init: Project name:     PIR[0m
+[0;32mI (530) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (535) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (541) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (547) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (552) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (557) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (561) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (567) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (574) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (580) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (606) spi_flash: detected chip: generic[0m
+[0;32mI (609) spi_flash: flash io: dio[0m
+[0;33mW (613) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (627) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (638) main_task: Started on CPU0[0m
+[0;32mI (648) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (648) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (758) gauge: Power Mode: 0x1[0m
+[0;32mI (758) gauge: APA: 0x2A[0m
+[0;32mI (758) gauge: Battery Profile: 0x1[0m
+[0;32mI (758) gauge: Temp Mode: 0x0[0m
+[0;32mI (768) gauge: Voltage: 4.16	RSOC: 98.0%[0m
+[0;32mI (768) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (768) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (798) progress: Starting Wifi[0m
+[0;32mI (1878) progress: Starting Clock[0m
+[0;32mI (3878) progress: The current date/time in Germany is: Thu Jan 16 13:33:43 2025[0m
+[0;32mI (3878) progress: Starting MQTT[0m
+[0;32mI (3878) mqtt: [APP] Free memory: 225180 bytes[0m
+[0;32mI (3888) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3898) mqtt: Note free memory: 214012 bytes[0m
+[0;32mI (3898) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3908) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3908) mqtt: Connected to MQTT
+[0m
+[0;32mI (3908) progress: Wake count: 1[0m
+[0;32mI (3908) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 197400887, Last Timestamp: 193461934[0m
+[0;32mStored event at position 1[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 193461934, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 197400887, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (71) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (71) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (71) boot: Multicore bootloader[0m
+[0;32mI (76) boot: chip revision: v3.0[0m
+[0;32mI (79) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (84) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (89) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (93) boot: Enabling RNG early entropy source...[0m
+[0;32mI (98) boot: Partition Table:[0m
+[0;32mI (102) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (109) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (117) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (125) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (132) boot: End of partition table[0m
+[0;32mI (136) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (202) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (202) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (214) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (221) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (455) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (490) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (491) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) app_init: Application information:[0m
+[0;32mI (532) app_init: Project name:     PIR[0m
+[0;32mI (537) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (542) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (548) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (554) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (559) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (564) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (569) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (614) spi_flash: detected chip: generic[0m
+[0;32mI (617) spi_flash: flash io: dio[0m
+[0;33mW (621) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (634) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (645) main_task: Started on CPU0[0m
+[0;32mI (655) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (655) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (765) gauge: Power Mode: 0x1[0m
+[0;32mI (765) gauge: APA: 0x2A[0m
+[0;32mI (765) gauge: Battery Profile: 0x1[0m
+[0;32mI (765) gauge: Temp Mode: 0x0[0m
+[0;32mI (775) gauge: Voltage: 4.22	RSOC: 100.0%[0m
+[0;32mI (775) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (775) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (805) progress: Starting Wifi[0m
+[0;32mI (1885) progress: Starting Clock[0m
+[0;32mI (3885) progress: The current date/time in Germany is: Thu Jan 16 13:33:47 2025[0m
+[0;32mI (3885) progress: Starting MQTT[0m
+[0;32mI (3885) mqtt: [APP] Free memory: 225184 bytes[0m
+[0;32mI (3895) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (3895) mqtt: Note free memory: 213788 bytes[0m
+[0;32mI (3895) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (3915) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (3915) mqtt: Connected to MQTT
+[0m
+[0;32mI (3915) progress: Wake count: 2[0m
+[0;32mI (3915) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 2[0m
+[0;32mCurrent Timestamp: 201604066, Last Timestamp: 197400887[0m
+[0;32mStored event at position 2[0m
+[0;32mPrinting stored events...[0m
+[0;32mEvent 0: Timestamp: 193461934, Sensor ID: 0[0m
+[0;32mEvent 1: Timestamp: 197400887, Sensor ID: 0[0m
+[0;32mEvent 2: Timestamp: 201604066, Sensor ID: 0[0m
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (78) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (78) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (78) boot: Multicore bootloader[0m
+[0;32mI (83) boot: chip revision: v3.0[0m
+[0;32mI (86) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (91) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (96) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (100) boot: Enabling RNG early entropy source...[0m
+[0;32mI (106) boot: Partition Table:[0m
+[0;32mI (109) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (117) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (124) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (132) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (139) boot: End of partition table[0m
+[0;32mI (144) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28980h (166272) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=000389a8 vaddr=3ff80301 size=00008h (     8) [0m
+[0;32mI (209) esp_image: segment 2: paddr=000389b8 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (221) esp_image: segment 3: paddr=0003c9f8 vaddr=40080000 size=03620h ( 13856) load[0m
+[0;32mI (229) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a4054h (671828) map[0m
+[0;32mI (462) esp_image: segment 5: paddr=000e407c vaddr=40083620 size=1636ch ( 90988) load[0m
+[0;32mI (498) esp_image: segment 6: paddr=000fa3f0 vaddr=400c0000 size=00304h (   772) [0m
+[0;32mI (498) esp_image: segment 7: paddr=000fa6fc vaddr=50000000 size=0027ch (   636) [0m
+[0;32mI (516) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (516) boot: Disabling RNG early entropy source...[0m
+[0;32mI (528) cpu_start: Multicore app[0m
+[0;32mI (537) cpu_start: Pro cpu start user code[0m
+[0;32mI (537) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (537) app_init: Application information:[0m
+[0;32mI (540) app_init: Project name:     PIR[0m
+[0;32mI (544) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (550) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (556) app_init: ELF file SHA256:  31d2ee31a8eef6ca...[0m
+[0;32mI (561) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (566) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (571) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (576) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (581) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (588) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (607) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (621) spi_flash: detected chip: generic[0m
+[0;32mI (624) spi_flash: flash io: dio[0m
+[0;33mW (628) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (641) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E7:D8
+CORRIDOR ESP.
+[0;31mE (662) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (772) gauge: Power Mode: 0x1[0m
+[0;32mI (772) gauge: APA: 0x2A[0m
+[0;32mI (772) gauge: Battery Profile: 0x1[0m
+[0;32mI (772) gauge: Temp Mode: 0x0[0m
+[0;32mI (772) gauge: Voltage: 4.33	RSOC: 100.0%[0m
+[0;32mI (782) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (782) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (812) progress: Starting Wifi[0m
+[0;32mI (1892) progress: Starting Clock[0m

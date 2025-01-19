@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mario/Desktop/Template-Bath/Template/esp-idf-lib-0.9.2/components/mpu6050
+# Install script for directory: C:/Users/mario/Desktop/IoT/Template-Bath/Template/esp-idf-lib-0.9.2/components/mpu6050
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

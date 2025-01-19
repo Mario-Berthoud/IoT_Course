@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mario/Desktop/Template-Bath/Template/esp-idf-lib-0.9.2/components/calibration
+# Install script for directory: C:/Users/mario/Desktop/IoT/Template-Bath/Template/esp-idf-lib-0.9.2/components/calibration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

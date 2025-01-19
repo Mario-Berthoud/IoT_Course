@@ -1,17 +1,27 @@
 #pragma once
 
+//CAPS Seminar IP
+// #define MQTT_BROKER                "131.159.85.238" 
+// #define EXAMPLE_ESP_WIFI_SSID      "CAPS-Seminar-Room"
+// #define EXAMPLE_ESP_WIFI_PASS      "caps-schulz-seminar-room-wifi"
+// #define SNTP_SERVER_NAME           "ntp1.in.tum.de"
 
-//#define EXAMPLE_ESP_WIFI_SSID      "CAPS-Seminar-Room"
-//#define EXAMPLE_ESP_WIFI_PASS      "caps-schulz-seminar-room-wifi"
-//#define SNTP_SERVER_NAME           "ntp1.in.tum.de"
-
+//House IP
+#define MQTT_BROKER                "192.168.1.132" 
 #define EXAMPLE_ESP_WIFI_SSID      "SSN_AP_Tr9ANH"
 #define EXAMPLE_ESP_WIFI_PASS      "ykKTzYzHnt9F"
 #define SNTP_SERVER_NAME           "pool.ntp.org"
 
-#define MQTT_BROKER                "192.168.1.132" 
+//BATH old code
+// #define DEVICE_ID                  "3"
+// #define DEVICE_TOPIC               "1/3/data"
+// #define DEVICE_KEY                 "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzA5MjYzMTksImlzcyI6ImlvdHBsYXRmb3JtIiwic3ViIjoiMS8zIn0.mb1M-Xum890gHZGEooyuY9B6wZ3qhBotjKN6Z8LHdBynTQVhr9hbC0fuNskbVNBULycYwOR3OnwFLr2vsefAvPLAdCsXvbGzlxx-SFGu9fbn7U949wcFwD87XM9KOCK4aH_F6pieHFwJ8wkC4_EdnR5gfYDbAVL5Ox7Dl9jd9TsKWlF43KZkktrAAApqM_tEZN_1ouN7GTZ5RRn7oJYZjaXCgt85EuQ6ayKJIxELp3b5WYj2ofxUXvQpbKUG0mOKJ5X17xUQ-MrKUfWle1qYrOBH9YPVbBmeQWWHLOkbX1lbHG5cuOvk00RXUcJuDPG1GMD0e9V93IXs33-hoeeNrGRnjuJp_xBcPERmA2l_uAVFPTkMG4Tq5oL64ljBzR6o6r50ruy5HhGxxcdhhZq_Zd6vNzp-mDrPygi_9jXmf351E9bNRlNmeKcxPV-iyGLzzaQT-x_t03dBBNIXFhldAJt4UmR7Ea7MW35_TfgGOpiGDvdnRVmkRU1-icxb8ApHu5Ej_AJPQazZrn1ZPQfq4zlNLNzAeGK0p3XczYBvmkr8UDPk8rnX4kXeVb0da_CezLOOQUc98LjWvglEz9i2aNt1FbcAjWIGe3vaWp4zq-HiI_zKPfu8OeBcnCVwC5SUSz7Oicfqycogk-jqiz411sfh4rwYv8Oh8g8VGZnbJBE"
 
-#define DEVICE_ID                  "2"
-#define DEVICE_TOPIC               "1/2/data"
-#define DEVICE_KEY                 "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzAzMzE0NzAsImlzcyI6ImlvdHBsYXRmb3JtIiwic3ViIjoiMS8zIn0.kIJnIR0AvzkJYmMXJ2wGPVqW662gieaW19lFSd8qx_c6bi6JiUiEfEMCnGr9G5sciwGit5yzyqMZtWHzJA0ii3G-18iHvOImcrFzL6NLjayDBBgpH7isXXd2XB8Dq3brKj4Mkgs2phBnyasOXtlvH42Hj88fi1I4LQeC3oE1LN9v6nN1Nbr3Va3Dv0MNUbh2NFvEp2VTLWIQ-mXSVRy25HXlyNkJ-5UyWFuLyFkxK1Cn9RtgQj08B9omyouD-vQtSf4imLrVEbDpqDherJ3EGBnYk8xl09tt4WmXBg5GdBk3YsM04uZhSTpnLvusqJkFi2vjBXK7P8DBF_-W0nqSjJHEMyq2hnpogb8K-zxqLL2rF_eqVd5KdmGjKv5OgGxFrkWMPWTd_eBCwrysm5fUCGW5h7gV2cSD0ZwACKcoa_ltihh3lpHr2SvPKD-K-wlindzSpQwUVx-ZAaI8b0oSOFDqjVqVkpYzaFN9olwc9yKUvvgBxcIzVLvgtDJ5SpN_Uw5dAQ-8jQ30NvmHoSEIYQSaHGdqgOdAaYf9TnEcFPx9iB8Q1IbqGVC-t8s6uaiby8aD4shPQi5k6kg2jiHIu5IkFX4VKl84NrtkZCQpm_pf3DcMGcFNC4pqOWYKbJC0_HM0QsIF6qWsweCwMRpb0lzAxfhd08ldXJisWpv97Kc"
-#define PIR_PIN 27 
+//GPIOs 
+#define PIR_PIN     27 
+#define DOOR_PIN    33 
+
+//Device Properties
+extern char* DEVICE_ID;
+extern char* DEVICE_TOPIC;
+extern char* DEVICE_KEY;

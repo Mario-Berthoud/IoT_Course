@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/mario/Desktop/Template-Bath/Template/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/mario/Desktop/IoT/Template-Corridor/Template/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

@@ -1,0 +1,1795 @@
+ets Jul 29 2019 12:21:46
+
+rst:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 21 2024 01:27:28[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=288a0h (166048) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000388c8 vaddr=3ff803d8 size=00004h (     4) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000388d4 vaddr=3ffb0000 size=04038h ( 16440) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=0003c914 vaddr=40080000 size=03704h ( 14084) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a3f90h (671632) map[0m
+[0;32mI (414) esp_image: segment 5: paddr=000e3fb8 vaddr=40083704 size=16288h ( 90760) load[0m
+[0;32mI (450) esp_image: segment 6: paddr=000fa248 vaddr=400c0000 size=003d8h (   984) load[0m
+[0;32mI (450) esp_image: segment 7: paddr=000fa628 vaddr=50000000 size=007f4h (  2036) load[0m
+[0;32mI (470) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (482) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu start user code[0m
+[0;32mI (490) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) app_init: Application information:[0m
+[0;32mI (493) app_init: Project name:     PIR[0m
+[0;32mI (498) app_init: App version:      42bb6fe-dirty[0m
+[0;32mI (503) app_init: Compile time:     Nov 21 2024 01:27:13[0m
+[0;32mI (509) app_init: ELF file SHA256:  78b9ac611f2dd528...[0m
+[0;32mI (515) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (520) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (525) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (530) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (535) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (542) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (548) heap_init: At 3FFB8970 len 00027690 (157 KiB): DRAM[0m
+[0;32mI (554) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (567) heap_init: At 4009998C len 00006674 (25 KiB): IRAM[0m
+[0;32mI (575) spi_flash: detected chip: generic[0m
+[0;32mI (578) spi_flash: flash io: dio[0m
+[0;33mW (582) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (595) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+!!!!Current MAC address: EC:62:60:BC:E8:20
+BATH ESP.
+[0;31mE (616) i2cdev: Could not write to device [0x0b at 0]: -1 (ESP_FAIL)[0m
+[0;32mI (726) gauge: Power Mode: 0x1[0m
+[0;32mI (726) gauge: APA: 0x2A[0m
+[0;32mI (726) gauge: Battery Profile: 0x1[0m
+[0;32mI (726) gauge: Temp Mode: 0x0[0m
+[0;32mI (736) gauge: Voltage: 4.47	RSOC: 100.0%[0m
+[0;32mI (736) progress: [APP] Free memory: 272740 bytes[0m
+[0;32mI (736) progress: [APP] IDF version: v5.3.1[0m
+[0;32mI (776) progress: Starting Wifi[0m
+[0;32mI (1916) progress: Starting Clock[0m
+[0;32mI (5916) progress: The current date/time in Germany is: Mon Nov 25 02:05:38 2024[0m
+[0;32mI (5916) progress: Starting MQTT[0m
+[0;32mI (5916) mqtt: [APP] Free memory: 224984 bytes[0m
+[0;32mI (5926) mqtt: MQTT_EVENT_BEFORE_CONNECT
+[0m
+[0;32mI (5926) mqtt: Note free memory: 213412 bytes[0m
+[0;32mI (5936) mqtt: Waiting for connection to MQTT
+[0m
+[0;32mI (5946) mqtt: MQTT_EVENT_CONNECTED
+[0m
+[0;32mI (5946) mqtt: Connected to MQTT
+[0m
+[0;32mI (5946) progress: Wake count: 1[0m
+[0;32mI (5946) progress: Going to sleep[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 13957008, Last Timestamp: 0[0m
+[0;32mStored event at position 0[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14000956, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14029156, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14057368, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14085581, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14113793, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14142006, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14170206, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14198419, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14226631, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14254844, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14283056, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14311269, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14339469, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14367669, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14395881, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14424082, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 14452282, Last Timestamp: 13957008[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41580183, Last Timestamp: 13957008[0m
+[0;32mStored event at position 1[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41614041, Last Timestamp: 41580183[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41642265, Last Timestamp: 41580183[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41670490, Last Timestamp: 41580183[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41698703, Last Timestamp: 41580183[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 41765560, Last Timestamp: 41580183[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61498168, Last Timestamp: 41580183[0m
+[0;32mStored event at position 2[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61555438, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61583687, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61713949, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61742198, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61770546, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61798783, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61827020, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61855244, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61883481, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61911706, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61939943, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61968168, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 61996392, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62024617, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62052842, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62081067, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62109291, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62137504, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62165716, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62193941, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62222166, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62250390, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62278615, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62306828, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62335040, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62363265, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62391477, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62419690, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62447902, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62476102, Last Timestamp: 61498168[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62504327, Last Timestamp: 61498168[0m
+[0;32mStored event at position 3[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62538172, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62566397, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62594597, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62622810, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62651034, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62679247, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62707472, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62735672, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62763897, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62792109, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62820322, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62848534, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62876747, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62904959, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62933159, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62961359, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 62989584, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63017797, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63046021, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63074222, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63102446, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63130659, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63158859, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63187072, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63215272, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63243472, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63271672, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63299885, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63328085, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63356297, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63384510, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63412722, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63440923, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63469135, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63497323, Last Timestamp: 62504327[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63525523, Last Timestamp: 62504327[0m
+[0;32mStored event at position 4[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63559344, Last Timestamp: 63525523[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63587556, Last Timestamp: 63525523[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63615757, Last Timestamp: 63525523[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 63643945, Last Timestamp: 63525523[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57252251, Last Timestamp: 63525523[0m
+[0;32mStored event at position 5[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57286072, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57314284, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57342485, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57370697, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57398885, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57427085, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57455273, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57483486, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57511710, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57539898, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57568111, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57596323, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57624524, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57652736, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57680949, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57709161, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57737386, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57765598, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57793799, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57822023, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57850223, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57878436, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57906636, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57934849, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57963061, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 57991261, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58019474, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58047686, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58075899, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58104099, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58132324, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58160536, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58188736, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58216937, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58245161, Last Timestamp: 57252251[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58273362, Last Timestamp: 57252251[0m
+[0;32mStored event at position 6[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58307207, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58335407, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58363607, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58391832, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58420044, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58448245, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58476445, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58504645, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58532870, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58561082, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58589283, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58617471, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58645671, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58673883, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58702084, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 58730272, Last Timestamp: 58273362[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75311665, Last Timestamp: 58273362[0m
+[0;32mStored event at position 7[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75345547, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75373784, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75402009, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75430246, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75458569, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75486781, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75515006, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75543218, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75571443, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75599656, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75627880, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75656105, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75684317, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75712542, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75740767, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75768979, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75797204, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75825417, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75853629, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75881854, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75910066, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75938279, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75966491, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 75994691, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76022904, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76051116, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76079317, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76107541, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76135754, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76163966, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76192179, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76220404, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76248616, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76276828, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76305029, Last Timestamp: 75311665[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76333253, Last Timestamp: 75311665[0m
+[0;32mStored event at position 8[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76367086, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76395336, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76423548, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76451761, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76479973, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76508185, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76536398, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76564598, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76592811, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76621023, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76649223, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76677424, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76705636, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76733849, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76762049, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76790261, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76818449, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76846650, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76874862, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76903074, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76931287, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76959475, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 76987687, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77015900, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77044112, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77072325, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77100525, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77128725, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77156938, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77185150, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77213350, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77241563, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77269751, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77297951, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77326151, Last Timestamp: 76333253[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77354352, Last Timestamp: 76333253[0m
+[0;32mStored event at position 9[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77388197, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77416397, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77444610, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77472810, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77501034, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77529235, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77557447, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77585660, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77613848, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77642060, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77670260, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77698485, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77726685, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77754898, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77783074, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77811433, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 1[0m
+[0;32mCurrent Timestamp: 77839621, Last Timestamp: 77354352[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 8[0m
+[0;32mCurrent Timestamp: 107867260, Last Timestamp: 77354352[0m
+[0;32mWake stub: undefined wakeup cause[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 8[0m
+[0;32mCurrent Timestamp: 137901243, Last Timestamp: 77354352[0m
+[0;32mWake stub: undefined wakeup cause[0m
+[0;32mReturning to deep sleep for next event[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+Wakeup Stub Executed
+[0;32mWakeup Cause: 8[0m
+[0;32mCurrent Timestamp: 167935250, Last Timestamp: 77354352[0m
+[0;32mWake stub: undefined wakeup cause[0m
+[0;32mReturning to deep sleep for next event[0m

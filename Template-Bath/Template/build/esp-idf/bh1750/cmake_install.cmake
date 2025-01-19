@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mario/Desktop/Template-Bath/Template/esp-idf-lib-0.9.2/components/bh1750
+# Install script for directory: C:/Users/mario/Desktop/IoT/Template-Bath/Template/esp-idf-lib-0.9.2/components/bh1750
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

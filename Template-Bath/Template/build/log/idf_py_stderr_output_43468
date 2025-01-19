@@ -1,0 +1,14 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM17 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM17 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 21abd0cc68e7d279836b31bb035602fce6b021a9ea87dc04e8b82e8e32c5bcee[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 21abd0cc68e7d279836b31bb035602fce6b021a9ea87dc04e8b82e8e32c5bcee[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 21abd0cc68e7d279836b31bb035602fce6b021a9ea87dc04e8b82e8e32c5bcee[0m
+[0m
